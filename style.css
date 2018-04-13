@@ -1,0 +1,225 @@
+
+header {
+	display: flex;
+	height: 35px;
+}
+
+.logo {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	width: 15%;
+	height: 50px;
+}
+
+.menu {
+	justify-content: center;
+	width: 75%;
+	height: 50px;
+}
+
+.cart {
+	display: flex;
+	justify-content: flex-end;
+	align-content: center;
+	width: 10%;
+	height: 50px;
+}
+
+.menu ul {
+	text-align: center;
+}
+
+header li {
+	display: inline;
+	color: #e2574c;
+	margin-right: 4%;
+	margin-left: 4%;
+}
+
+#logo {
+	width: 127px;
+	height: auto;
+}
+
+#cart {
+	width: 45px;
+	height: auto;
+	justify-content: flex-end;
+}
+
+.container1 {
+	display: flex;
+	height: 400px;
+	background-image: url(./images/banner-girl.png), url(./images/flower-bkgd.jpg);
+	background-size: contain, cover;
+	background-repeat: no-repeat, no-repeat;
+	background-position: center bottom, center;
+	margin-top: 30px;
+	width: 100%;
+	color: white;
+}
+
+.title {
+	text-align: center;
+	width: 100%;
+	align-content: center;
+}
+
+.items {
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#mens {
+	background: url(./images/mens-category.jpg) cover;
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+}
+
+
+#trends {
+	background-image: url(./images/trends-category.jpg);
+	background-size: cover;
+	width: 25%;
+	height: auto;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#trends h1 {
+	text-align: center;
+}
+
+#glasses {
+	background-image: url(./images/glasses-category.jpg);
+	background-size: cover;
+	width: 25%;
+	height: auto;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#glasses h1 {
+	text-align: center;
+}
+
+#sale {
+	background-image: url(./images/sale-category.jpg);
+	background-size: cover;
+	width: 25%;
+	height: auto;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#sale h1 {
+	text-align: center;
+}
+
+#bags {
+	background-image: url(./images/bags-category.jpg);
+	background-size: cover;
+	width: 25%;
+	height: auto;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#bags h1 {
+	text-align: center;
+}
+
+#womens {
+	background-image: url(./images/womens-category.jpg);
+	background-size: cover;
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#womens h1 {
+	text-align: center;
+}
+
+body {
+	font-family: Raleway;
+}
+
+h1 h2 h3 {
+	font-family: Playfair Display; 
+}
+
+footer {
+	display: flex;
+	background-color: #242424;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	}
+
+.contact {
+	justify-content: flex-start;
+	flex-basis: 50%;
+	align-items: flex-start;
+	margin-left: 25px;
+}
+
+.social {
+	display: flex;
+	justify-content: flex-end;
+	flex-basis: 50%;
+}
+
+.social ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+.social div {
+	display: flex;
+	width: 180px;
+	justify-content: flex-start;	 
+}
+
+#address {
+	color: #969696;
+}
+
+
+
+#facebook:before {
+	font-family: "Font Awesome 5 Brands";
+	content: "\f39e";
+	margin-right: 25px;
+}
+
+#twitter:before {
+	font-family: "Font Awesome 5 Brands";
+	content: "\f099";
+	margin-right: 16px;
+}
+
+#instagram:before {
+	font-family: "Font Awesome 5 Brands";
+	content: "\f16d";
+	margin-right: 20px;
+}
+
+#pinterest:before {
+	font-family: "Font Awesome 5 Brands";
+	content: "\f0d3";
+	margin-right: 19px;
+}
+
+#google:before {
+	font-family: "Font Awesome 5 Brands";
+	content: "\f0d5";
+	margin-right: 12px;
+}
