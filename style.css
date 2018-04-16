@@ -1,19 +1,72 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS for Aloha */
+
+
 
 header {
 	display: flex;
-	height: 35px;
+	height: 60px;
+	margin-top: 10px;
 }
 
 .logo {
 	display: flex;
 	justify-content: flex-start;
-	align-content: center;
 	width: 15%;
 	height: 50px;
+	margin-left: 10px;
 }
 
 .menu {
-	justify-content: center;
+	display: flex;
+	align-items: center;
 	width: 75%;
 	height: 50px;
 }
@@ -24,18 +77,21 @@ header {
 	align-content: center;
 	width: 10%;
 	height: 50px;
+	margin-right: 10px;
 }
 
-.menu ul {
-	text-align: center;
-}
-
-header li {
-	display: inline;
+.menu nav {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 	color: #e2574c;
-	margin-right: 4%;
-	margin-left: 4%;
 }
+.menu a {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
 
 #logo {
 	width: 127px;
@@ -48,101 +104,226 @@ header li {
 	justify-content: flex-end;
 }
 
-.container1 {
+.banner {
 	display: flex;
-	height: 400px;
+	height: 475px;
 	background-image: url(./images/banner-girl.png), url(./images/flower-bkgd.jpg);
 	background-size: contain, cover;
 	background-repeat: no-repeat, no-repeat;
 	background-position: center bottom, center;
-	margin-top: 30px;
+	background-position-y: 95px, 0px;
 	width: 100%;
 	color: white;
 }
 
 .title {
-	text-align: center;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
-	align-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
+.title h1 {
+	font-size: 50px;
+}
+
+.title h2 {
+	font-size: 22px;
+}
+
+/* next section */
+
+.styles {
+	display: flex;
+	height: 250px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.styles h1 {
+	font-size: 35px;
+	font-style: italic;
+	font-family: Playfair Display;
+	margin-bottom: 25px;
+}
+
+.styles span {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.styles p {
+	text-align: center;
+}
+
+/* next section */
+
 .items {
-	display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	box-sizing: border-box;
 }
 
 #mens {
-	background: url(./images/mens-category.jpg) cover;
+	background-image: url(./images/mens-category.jpg);
+	background-size: cover;
 	width: 50%;
-	display: inline-block;
-	text-align: center;
+	box-sizing: border-box;
+	height: 220px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 30px;
+	border-style: solid;
+	border-color: white;
+	border-width: 0px 2px 2px 0px;
 }
-
 
 #trends {
 	background-image: url(./images/trends-category.jpg);
 	background-size: cover;
 	width: 25%;
-	height: auto;
-	display: inline-block;
 	box-sizing: border-box;
+	height: 220px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: white;
+	font-size: 30px;
+	border-style: solid;
+	border-color: white;
+	border-width: 0px 2px 2px 2px;
 }
 
-#trends h1 {
-	text-align: center;
-}
 
 #glasses {
 	background-image: url(./images/glasses-category.jpg);
 	background-size: cover;
 	width: 25%;
-	height: auto;
-	display: inline-block;
 	box-sizing: border-box;
+	height: 220px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: white;
+	font-size: 30px;
+	border-style: solid;
+	border-color: white;
+	border-width: 0px 0px 2px 2px;
 }
 
-#glasses h1 {
-	text-align: center;
-}
 
 #sale {
 	background-image: url(./images/sale-category.jpg);
 	background-size: cover;
 	width: 25%;
-	height: auto;
-	display: inline-block;
 	box-sizing: border-box;
-}
-
-#sale h1 {
-	text-align: center;
+	height: 220px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: white;
+	font-size: 30px;
+	border-style: solid;
+	border-color: white;
+	border-width: 2px 2px 0px 0px;
 }
 
 #bags {
 	background-image: url(./images/bags-category.jpg);
 	background-size: cover;
 	width: 25%;
-	height: auto;
-	display: inline-block;
 	box-sizing: border-box;
-}
-
-#bags h1 {
-	text-align: center;
+	height: 220px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: white;
+	font-size: 30px;
+	border-style: solid;
+	border-color: white;
+	border-width: 2px 2px 0px 2px;
 }
 
 #womens {
 	background-image: url(./images/womens-category.jpg);
 	background-size: cover;
 	width: 50%;
-	height: auto;
-	display: inline-block;
 	box-sizing: border-box;
+	height: 220px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: white;
+	font-size: 30px;
+	border-style: solid;
+	border-color: white;
+	border-width: 2px 0px 0px 2px;
 }
 
-#womens h1 {
+/* next section */
+
+.container h1 {
+	font-size: 35px;
+	font-style: italic;
+	font-family: Playfair Display;
 	text-align: center;
+	margin-top: 25px;
+}
+
+.container span {
+	font-style: normal;
+	font-weight: bold;	
+}
+
+.container h2 {
+	font-size: 25px;
+	color: #e2574c;
+	font-weight: bold;
+}
+
+.scroll div {
+	text-align: center;
+	width: 100%;
+}
+
+.scroll {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*    next section       */
+
+
+.signup {
+	background-image: url(./images/wave-bkgd.jpg);
+	background-size: cover;
+	background-position: bottom;
+	margin-top: 20px;
+	display: flex;
+}
+
+.signup div {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	display: flex;
+	align-content: center;
+}
+
+.signup h1 {
+	font-size: 35px;
+	font-style: italic;
+	font-family: Playfair Display;
+}
+
+.signup span {
+	font-style: normal;
+	font-weight: bold;	
 }
 
 body {
@@ -157,38 +338,41 @@ footer {
 	display: flex;
 	background-color: #242424;
 	color: white;
-	padding-top: 30px;
-	padding-bottom: 30px;
 	}
 
+.info {
+	height: 300px;
+	width: 100%;
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-right: 60px;
+	margin-left: 30px;
+}
 .contact {
+	display: flex;
+	width: 50%;
 	justify-content: flex-start;
-	flex-basis: 50%;
-	align-items: flex-start;
-	margin-left: 25px;
+	align-items: center;
 }
 
 .social {
 	display: flex;
+	width: 50%;
 	justify-content: flex-end;
-	flex-basis: 50%;
+	margin-bottom: 60px;
+	margin-top: 60px;
 }
 
-.social ul {
-	list-style-type: none;
+.social nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 
 }
 
-.social div {
-	display: flex;
-	width: 180px;
-	justify-content: flex-start;	 
-}
 
-#address {
+.contact span {
 	color: #969696;
 }
 
