@@ -125,7 +125,7 @@ header {
 }
 
 .title h1 {
-	font-size: 50px;
+	font-size: 40px;
 }
 
 .title h2 {
@@ -143,7 +143,7 @@ header {
 }
 
 .styles h1 {
-	font-size: 35px;
+	font-size: 30px;
 	font-style: italic;
 	font-family: Playfair Display;
 	margin-bottom: 25px;
@@ -268,7 +268,7 @@ header {
 /* next section */
 
 .container h1 {
-	font-size: 35px;
+	font-size: 30px;
 	font-style: italic;
 	font-family: Playfair Display;
 	text-align: center;
@@ -437,4 +437,142 @@ footer {
 	font-family: "Font Awesome 5 Brands";
 	content: "\f0d5";
 	margin-right: 12px;
+}
+
+
+
+
+/* Breakpoints */
+
+@media all and (max-width: 600px) {
+
+/* header */
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	height: 95px;
+	margin-top: 10px;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	width: auto;
+}
+
+.menu {
+	display: flex;
+	order: 2;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+}
+
+.menu nav {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+
+}
+
+.menu a {
+	margin: 0;
+}
+.cart {
+	display: flex;
+	width: auto;
+}
+
+/* items */
+
+#mens {
+	width: 100%;
+	border-width: 0px 0px 2px 0px;
+}
+
+
+#trends {
+	width: 50%;
+	border-width: 2px 2px 2px 0px;
+}
+
+#glasses {
+	width: 50%;
+	border-width: 2px 0px 2px 2px;
+}
+
+#sale {
+	width: 50%;
+	border-width: 2px 2px 2px 0px;
+}
+
+#bags {
+	width: 50%;
+	border-width: 2px 0px 2px 2px;
+}
+
+#womens {
+	width: 100%;
+	border-width: 2px 0px 0px 0px;
+}
+
+
+/* banner */
+
+.title h1 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+
+/* sign-up */
+
+.signup {
+	background-size: unset;
+
+}
+
+
+
+/* footer */
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+	margin-left: 0px;
+    margin-right: 0px;
+}
+.contact {
+	margin-top: 75px;
+	text-align: center;
+}
+
+.social {
+	display: flex;
+	margin-bottom: 0px;
+	width: 100%;
+	justify-content: center;
+}
+
+.social nav {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.social span {
+	display: none;
+
+}
+}
+
+/* media query for tablet */
+
+@media all and (min-width: 601px)  {
+
 }
