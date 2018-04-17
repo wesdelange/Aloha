@@ -46,16 +46,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* CSS for Aloha */
+/* CSS for Aloha -----------------------------------------------------------------------------------------*/
+body {
+	font-family: Raleway;
+}
 
-
-
+h1 h2 h3 {
+	font-family: Playfair Display; 
+}
+/* Header Section 	--------------------------------------------------------------------------------------*/
 header {
 	display: flex;
 	height: 60px;
 	margin-top: 10px;
 }
-
 .logo {
 	display: flex;
 	justify-content: flex-start;
@@ -63,14 +67,6 @@ header {
 	height: 50px;
 	margin-left: 10px;
 }
-
-.menu {
-	display: flex;
-	align-items: center;
-	width: 75%;
-	height: 50px;
-}
-
 .cart {
 	display: flex;
 	justify-content: flex-end;
@@ -79,7 +75,12 @@ header {
 	height: 50px;
 	margin-right: 10px;
 }
-
+.menu {
+	display: flex;
+	align-items: center;
+	width: 75%;
+	height: 50px;
+}
 .menu nav {
 	display: flex;
 	width: 100%;
@@ -91,19 +92,16 @@ header {
 	margin-right: 15px;
 	margin-left: 15px;
 }
-
-
 #logo {
 	width: 127px;
 	height: auto;
 }
-
 #cart {
 	width: 45px;
 	height: auto;
 	justify-content: flex-end;
 }
-
+/* Banner Section 	------------------------------------------------------------------------------------*/
 .banner {
 	display: flex;
 	height: 475px;
@@ -115,7 +113,6 @@ header {
 	width: 100%;
 	color: white;
 }
-
 .title {
 	display: flex;
 	flex-direction: column;
@@ -123,17 +120,13 @@ header {
 	align-items: center;
 	justify-content: center;
 }
-
 .title h1 {
 	font-size: 40px;
 }
-
 .title h2 {
 	font-size: 22px;
 }
-
-/* next section */
-
+/* "Hand-Crafted Styles" section	------------------------------------------------------------------ */
 .styles {
 	display: flex;
 	height: 250px;
@@ -141,132 +134,75 @@ header {
 	align-items: center;
 	flex-direction: column;
 }
-
 .styles h1 {
 	font-size: 30px;
 	font-style: italic;
 	font-family: Playfair Display;
 	margin-bottom: 25px;
 }
-
 .styles span {
 	font-style: normal;
 	font-weight: bold;
 }
-
 .styles p {
 	text-align: center;
 }
-
-/* next section */
-
+/* Items section	-------------------------------------------------------------------------------- */
 .items {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 	box-sizing: border-box;
 }
-
-#mens {
+.items div {
+	box-sizing: border-box;
+	background-size: cover;
+	height: 220px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 30px;
+	border-style: solid;
+	border-color: white;
+}
+.mens {
 	background-image: url(./images/mens-category.jpg);
 	background-size: cover;
 	width: 50%;
-	box-sizing: border-box;
-	height: 220px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	font-size: 30px;
-	border-style: solid;
-	border-color: white;
 	border-width: 0px 2px 2px 0px;
 }
-
-#trends {
+.trends {
 	background-image: url(./images/trends-category.jpg);
 	background-size: cover;
 	width: 25%;
-	box-sizing: border-box;
-	height: 220px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	color: white;
-	font-size: 30px;
-	border-style: solid;
-	border-color: white;
 	border-width: 0px 2px 2px 2px;
 }
-
-
-#glasses {
+.glasses {
 	background-image: url(./images/glasses-category.jpg);
 	background-size: cover;
 	width: 25%;
-	box-sizing: border-box;
-	height: 220px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	color: white;
-	font-size: 30px;
-	border-style: solid;
-	border-color: white;
 	border-width: 0px 0px 2px 2px;
 }
-
-
-#sale {
+.sale {
 	background-image: url(./images/sale-category.jpg);
 	background-size: cover;
 	width: 25%;
-	box-sizing: border-box;
-	height: 220px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	color: white;
-	font-size: 30px;
-	border-style: solid;
-	border-color: white;
 	border-width: 2px 2px 0px 0px;
 }
-
-#bags {
+.bags {
 	background-image: url(./images/bags-category.jpg);
 	background-size: cover;
 	width: 25%;
-	box-sizing: border-box;
-	height: 220px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	color: white;
-	font-size: 30px;
-	border-style: solid;
-	border-color: white;
 	border-width: 2px 2px 0px 2px;
 }
-
-#womens {
+.womens {
 	background-image: url(./images/womens-category.jpg);
 	background-size: cover;
 	width: 50%;
-	box-sizing: border-box;
-	height: 220px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	color: white;
-	font-size: 30px;
-	border-style: solid;
-	border-color: white;
 	border-width: 2px 0px 0px 2px;
 }
-
-/* next section */
-
+/* Shopping Section section 	---------------------------------------------------------------------*/
 .container h1 {
 	font-size: 30px;
 	font-style: italic;
@@ -274,31 +210,24 @@ header {
 	text-align: center;
 	margin-top: 25px;
 }
-
 .container span {
 	font-style: normal;
 	font-weight: bold;	
 }
-
 .container h2 {
 	font-size: 25px;
 	color: #e2574c;
 	font-weight: bold;
 }
-
 .scroll div {
 	text-align: center;
 	width: 100%;
 }
-
 .scroll {
 	display: flex;
 	flex-wrap: wrap;
 }
-
-/*    next section       */
-
-
+/* Sign-up section 	------------------------------------------------------------------------------------      */
 .signup {
 	background-image: url(./images/wave-bkgd.jpg);
 	background-size: cover;
@@ -307,7 +236,6 @@ header {
 	margin-bottom: 10px;
 	color: white;
 }
-
 .signup div {
 	width: 100%;
 	height: 250px;
@@ -317,35 +245,28 @@ header {
 	align-items: center;
 	justify-content: center;
 }
-
 .signup h1 {
 	font-size: 35px;
 	font-style: italic;
 	font-family: Playfair Display;
 }
-
 .signup span {
 	font-style: normal;
 	font-weight: bold;	
 }
-
-#subscribe {
-	width: 100%;
+.signup .subscribe {
 	display: inline-block;
 	background-color: white;
 	height: 38px;
 	width: auto;
 	border-radius: 20px;
 }
-
 .input {
 	border: none;
 	padding: 10px;
 	border-radius: 20px;
 	color: #969696;
-
 }
-
 .button {
 	background-color: red;
 	color: white;
@@ -355,22 +276,12 @@ header {
 	padding: 10px 30px;
 	border-radius: 20px;
 }
-
-
-body {
-	font-family: Raleway;
-}
-
-h1 h2 h3 {
-	font-family: Playfair Display; 
-}
-
+/* Footer Section 	--------------------------------------------------------------------------------------*/
 footer {
 	display: flex;
 	background-color: #242424;
 	color: white;
 	}
-
 .info {
 	height: 250px;
 	width: 100%;
@@ -386,7 +297,6 @@ footer {
 	justify-content: flex-start;
 	align-items: center;
 }
-
 .social {
 	display: flex;
 	width: 50%;
@@ -394,60 +304,44 @@ footer {
 	margin-bottom: 60px;
 	margin-top: 60px;
 }
-
 .social nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-
 }
-
-
 .contact span {
 	color: #969696;
 }
-
-
-
 #facebook:before {
 	font-family: "Font Awesome 5 Brands";
 	content: "\f39e";
 	margin-right: 25px;
 }
-
 #twitter:before {
 	font-family: "Font Awesome 5 Brands";
 	content: "\f099";
 	margin-right: 16px;
 }
-
 #instagram:before {
 	font-family: "Font Awesome 5 Brands";
 	content: "\f16d";
 	margin-right: 20px;
 }
-
 #pinterest:before {
 	font-family: "Font Awesome 5 Brands";
 	content: "\f0d3";
 	margin-right: 19px;
 }
-
 #google:before {
 	font-family: "Font Awesome 5 Brands";
 	content: "\f0d5";
 	margin-right: 12px;
 }
-
-
-
-
-/* Breakpoints */
+/* Breakpoints	------------------------------------------------------------------------------------------- */
 
 @media all and (max-width: 600px) {
 
 /* header */
-
 header {
 	display: flex;
 	flex-wrap: wrap;
@@ -455,12 +349,10 @@ header {
 	margin-top: 10px;
 	justify-content: space-between;
 }
-
 .logo {
 	display: flex;
 	width: auto;
 }
-
 .menu {
 	display: flex;
 	order: 2;
@@ -468,14 +360,12 @@ header {
 	width: 100%;
 	height: 50px;
 }
-
 .menu nav {
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
 
 }
-
 .menu a {
 	margin: 0;
 }
@@ -483,60 +373,42 @@ header {
 	display: flex;
 	width: auto;
 }
-
 /* items */
-
 #mens {
 	width: 100%;
 	border-width: 0px 0px 2px 0px;
 }
-
-
 #trends {
 	width: 50%;
 	border-width: 2px 2px 2px 0px;
 }
-
 #glasses {
 	width: 50%;
 	border-width: 2px 0px 2px 2px;
 }
-
 #sale {
 	width: 50%;
 	border-width: 2px 2px 2px 0px;
 }
-
 #bags {
 	width: 50%;
 	border-width: 2px 0px 2px 2px;
 }
-
 #womens {
 	width: 100%;
 	border-width: 2px 0px 0px 0px;
 }
-
-
 /* banner */
-
 .title h1 {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
-
-
-
 /* sign-up */
-
 .signup {
 	background-size: unset;
 
 }
-
-
-
 /* footer */
 .info {
 	display: flex;
@@ -550,29 +422,23 @@ header {
 	margin-top: 75px;
 	text-align: center;
 }
-
 .social {
 	display: flex;
 	margin-bottom: 0px;
 	width: 100%;
 	justify-content: center;
 }
-
 .social nav {
 	display: flex;
 	flex-direction: row;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-
 .social span {
 	display: none;
-
 }
 }
-
 /* media query for tablet */
-
 @media all and (min-width: 601px)  {
 
 }
