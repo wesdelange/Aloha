@@ -227,6 +227,14 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 }
+button {
+	background-color: black;
+	border: 0px;
+	border-radius: 15px;
+	color: white;
+	padding: 5px 20px;
+	margin-top: 10px;
+}
 /* Sign-up section 	------------------------------------------------------------------------------------      */
 .signup {
 	background-image: url(./images/wave-bkgd.jpg);
@@ -275,6 +283,7 @@ header {
 	font-size: 16px;
 	padding: 10px 30px;
 	border-radius: 20px;
+	margin: 0px;
 }
 /* Footer Section 	--------------------------------------------------------------------------------------*/
 footer {
@@ -374,27 +383,27 @@ header {
 	width: auto;
 }
 /* items */
-#mens {
+.mens {
 	width: 100%;
 	border-width: 0px 0px 2px 0px;
 }
-#trends {
+.trends {
 	width: 50%;
 	border-width: 2px 2px 2px 0px;
 }
-#glasses {
+.glasses {
 	width: 50%;
 	border-width: 2px 0px 2px 2px;
 }
-#sale {
+.sale {
 	width: 50%;
 	border-width: 2px 2px 2px 0px;
 }
-#bags {
+.bags {
 	width: 50%;
 	border-width: 2px 0px 2px 2px;
 }
-#womens {
+.womens {
 	width: 100%;
 	border-width: 2px 0px 0px 0px;
 }
