@@ -75,6 +75,17 @@ header {
 	height: 50px;
 	margin-right: 10px;
 }
+#counter {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	background-color: red;
+	border: 0px;
+	border-radius: 100%;
+	color: white;
+	width: 25px;
+	height: 25px;
+}
 .menu {
 	display: flex;
 	align-items: center;
