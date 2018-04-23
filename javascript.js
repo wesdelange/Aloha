@@ -1,4 +1,4 @@
-
+//JavaScript for Shopping Cart counter
 $(function(){
     var i = 0;
     $('button') .on('click', function(event) {
@@ -8,6 +8,7 @@ $(function(){
         $("#counter").append(i);
     })
 })
+//JQuery for Carousel
 $(document).ready(function(){
     $('.scroll').slick({
       arrows: false,

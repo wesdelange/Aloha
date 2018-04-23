@@ -85,12 +85,14 @@ header {
 	color: white;
 	width: 25px;
 	height: 25px;
+	font-weight: bold;
 }
 .menu {
 	display: flex;
 	align-items: center;
 	width: 75%;
 	height: 50px;
+	font-weight: bold;
 }
 .menu nav {
 	display: flex;
@@ -157,7 +159,9 @@ header {
 }
 .styles p {
 	text-align: center;
+	width: 60%;
 }
+
 /* Items section	-------------------------------------------------------------------------------- */
 .items {
 	display: flex;
@@ -214,12 +218,6 @@ header {
 	border-width: 2px 0px 0px 2px;
 }
 /* Shopping Section section 	---------------------------------------------------------------------*/
-.container {
-	padding-bottom: 15px;
-}
-
-
-
 .container h1 {
 	font-size: 30px;
 	font-style: italic;
@@ -415,6 +413,9 @@ header {
 .banner {
 	margin-top: 10px;
 }
+.styles p {
+	width: 85%;
+}
 /* items */
 .mens {
 	width: 100%;
@@ -449,11 +450,9 @@ header {
 /* sign-up */
 .signup {
 	background-size: unset;
-
 }
 .signup .subscribe {
 	width: 85%;
-
 }
 /* footer */
 .info {
@@ -483,12 +482,13 @@ header {
 .social span {
 	display: none;
 }
-}
 /* media query for tablet */
 @media all and (min-width: 601px) and (max-width: 1025px)  {
 
+.styles p {
+	width: 75%;
+}
 .items div {
 	height: 150px;
 	font-size: 25px;
-}
 }
