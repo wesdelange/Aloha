@@ -118,7 +118,7 @@ header {
 .banner {
 	display: flex;
 	height: 475px;
-	background-image: url(./images/banner-girl-compresssor.png), url(./images/flower-bkgd.jpg);
+	background-image: url(./images/banner-girl-compressor.png), url(./images/flower-bkgd.jpg);
 	background-size: contain, cover;
 	background-repeat: no-repeat, no-repeat;
 	background-position: center bottom, center;
