@@ -118,7 +118,7 @@ header {
 .banner {
 	display: flex;
 	height: 475px;
-	background-image: url(./images/banner-girl-compressor.png), url(./images/flower-bkgd.jpg);
+	background-image: url(./images/banner-girl-compressor.png), url(./images/flower-bkgd-compressor.jpg);
 	background-size: contain, cover;
 	background-repeat: no-repeat, no-repeat;
 	background-position: center bottom, center;
@@ -182,37 +182,37 @@ header {
 	border-color: white;
 }
 .mens {
-	background-image: url(./images/mens-category.jpg);
+	background-image: url(./images/mens-category-compressor.jpg);
 	background-size: cover;
 	width: 50%;
 	border-width: 0px 2px 2px 0px;
 }
 .trends {
-	background-image: url(./images/trends-category.jpg);
+	background-image: url(./images/trends-category-compressor.jpg);
 	background-size: cover;
 	width: 25%;
 	border-width: 0px 2px 2px 2px;
 }
 .glasses {
-	background-image: url(./images/glasses-category.jpg);
+	background-image: url(./images/glasses-category-compressor.jpg);
 	background-size: cover;
 	width: 25%;
 	border-width: 0px 0px 2px 2px;
 }
 .sale {
-	background-image: url(./images/sale-category.jpg);
+	background-image: url(./images/sale-category-compressor.jpg);
 	background-size: cover;
 	width: 25%;
 	border-width: 2px 2px 0px 0px;
 }
 .bags {
-	background-image: url(./images/bags-category.jpg);
+	background-image: url(./images/bags-category-compressor.jpg);
 	background-size: cover;
 	width: 25%;
 	border-width: 2px 2px 0px 2px;
 }
 .womens {
-	background-image: url(./images/womens-category.jpg);
+	background-image: url(./images/womens-category-compressor.jpg);
 	background-size: cover;
 	width: 50%;
 	border-width: 2px 0px 0px 2px;
