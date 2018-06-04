@@ -5,4 +5,12 @@ Learned the basics of web development form scratch. Started with HTML, then CSS 
 
 Desktop Version
 
+![Alt text](/images/full-page-screenshot.png "Desktop Version")
 
+Tablet Version
+
+![Alt text](/images/tablet-screenshot.png "Tablet Version")
+
+Mobile Version
+
+![Alt text](/images/mobile-screenshot.png "Mobile Version")
